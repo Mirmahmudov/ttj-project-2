@@ -1,0 +1,54 @@
+.addUser {
+  background-color: #d73f0f;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+.addModal {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+  /* top: 0px; */
+  /* left: 0px; */
+  /* transform: scale(0) !important; */
+  display: none;
+}
+
+.addModal.active {
+ display: flex
+} 
+.addModal form {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+.addModal input {
+  width: 100%;
+  font-size: 18px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+} 
+.addModal svg{
+  font-size: 38px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+  font-weight: 700;
+  color: white;
+}
